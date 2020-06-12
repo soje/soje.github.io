@@ -126,7 +126,7 @@ a[data-toggle="collapse"] {
     position: fixed;
     left: 0px;
     top: 50%;
-    display: block;
+    display: none;
     transition: all 1s;
 }
 
@@ -144,6 +144,7 @@ a[data-toggle="collapse"] {
     position: absolute;
     top: 0;
     right: 0;
+    overflow: hidden;
 }
 
 #content.active {
@@ -195,7 +196,7 @@ a[data-toggle="collapse"] {
     }
 
     #sidebar.active {
-        margin-left: 0;
+        margin-left: 250px;
     }
 
     #content {
@@ -203,7 +204,7 @@ a[data-toggle="collapse"] {
     }
 
     #content.active {
-        width: calc(100% - 250px);
+        width: calc(100%-250px);
     }
 
     #sidebarCollapse span {
