@@ -31,6 +31,14 @@ a:focus {
     color: #fff;
 }
 
+.header-title {
+    font-size: 5em;
+}
+
+.header-subtitle{
+    font-size: 3em;
+}
+
 .wrapper {
     display: flex;
     width: 100%;
@@ -104,18 +112,19 @@ a[data-toggle="collapse"] {
     position: absolute;
     text-align: center;
     line-height: 35px;
-    top: 10px;
+    top: 20px;
     right: 10px;
     width: 35px;
     height: 35px;
     background-color: #0043FD;
     border-radius: 0.3em;
+    transition: all 1s;
 }
 
 #dismiss:hover {
     background: #fff;
     color: #0043FD;
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 #sidebarCollapse {
@@ -191,6 +200,14 @@ a[data-toggle="collapse"] {
 
 @media (max-width: 768px) {
     
+    .header-title {
+        font-size: 45px;
+    }
+
+    .header-subtitle {
+        font-size: 25px;
+    }
+
     #sidebar {
         margin-left: -250px;
     }
