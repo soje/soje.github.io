@@ -40,7 +40,7 @@ a:focus {
     width: 250px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -250px;
     height: 100vh;
     z-index: 999;
     background: #0043FD;
@@ -49,7 +49,7 @@ a:focus {
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: 250px;
 }
 
 #sidebar .sidebar-header {
@@ -58,7 +58,7 @@ a:focus {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 0px 0;
     border-bottom: 1px solid #47748b;
 }
 
@@ -75,7 +75,7 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: #fff;
-    background: #0A81C2;
+    background: rgb(0, 58, 219);
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -85,7 +85,6 @@ a:focus {
 
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
     background: #0043FD;
 }
 
@@ -120,11 +119,26 @@ a[data-toggle="collapse"] {
 }
 
 #sidebarCollapse {
-    display: none;
+    background: transparent;
+    color: #0043FD;
+    border: none;
+    border-radius: none;
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    display: block;
+    transition: all 1s;
+}
+
+#sidebarCollapse:hover {
+    background: #0043FD;
+    color: #fff;
+    border-radius: 0%;
+    transition: all 1s;
 }
 
 #content{
-    width: calc(100% - 250px);
+    width: 100%;
     min-height: 100vh;
     transition: all 0.3s;
     position: absolute;
@@ -133,7 +147,7 @@ a[data-toggle="collapse"] {
 }
 
 #content.active {
-    width: 100%;
+    width: calc(100% - 250px);
 }
 
 .masterhead {

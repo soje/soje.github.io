@@ -13,3 +13,20 @@ $(document).ready(function() {
     });
     
 });
+
+$(window).scroll(function(){
+    var contentTop = $('#content-sections').offset().top,
+        altezzaScroll_Y = $(this).scrollTop();
+
+        if(altezzaScroll_Y > contentTop) {
+            $('#sidebarCollapse').css('display', 'block');
+        } else if(altezzaScroll_Y < contentTop){
+            $('#sidebarCollapse').css('display', 'none');
+            if(($('#sidebar, #content').hasClass('active'))){
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true').attr('aria-expanded', 'false');
+            }
+        }
+
+});
