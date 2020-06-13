@@ -145,6 +145,59 @@ a[data-toggle="collapse"] {
     }
 }
 
+@-o-keyframes bounce {
+    0%, 10%, to {
+        transform: translateX(-50px);
+    }
+    20%, 40%, to {
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    50%, 90%, to {
+        transform: translateX(10px);
+    }
+    90%, 100%, to {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 10%, to {
+        transform: translateX(-50px);
+    }
+    20%, 40%, to {
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    50%, 90%, to {
+        transform: translateX(10px);
+    }
+    90%, 100%, to {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes bounce {
+    0%, 10%, to {
+        transform: translateX(-50px);
+    }
+    20%, 40%, to {
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    50%, 90%, to {
+        transform: translateX(10px);
+    }
+    90%, 100%, to {
+        transform: translateX(0);
+    }
+}
 
 #sidebarCollapse {
     background: transparent;
@@ -156,6 +209,10 @@ a[data-toggle="collapse"] {
     top: 50%;
     display: none;
     transition: all 1s;
+    -webkit-animation: bounce 3s linear;
+    -moz-animation: bounce 3s linear;
+    -ms-animation: bounce 3s linear;
+    -o-animation: bounce 3s linear;
     animation: bounce 3s linear;
 }
 
