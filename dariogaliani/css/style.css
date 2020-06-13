@@ -127,6 +127,25 @@ a[data-toggle="collapse"] {
     transition: all 1s;
 }
 
+@keyframes bounce {
+    0%, 10%, to {
+        transform: translateX(-50px);
+    }
+    20%, 40%, to {
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    50%, 90%, to {
+        transform: translateX(10px);
+    }
+    90%, 100%, to {
+        transform: translateX(0);
+    }
+}
+
+
 #sidebarCollapse {
     background: transparent;
     color: #0043FD;
@@ -137,6 +156,7 @@ a[data-toggle="collapse"] {
     top: 50%;
     display: none;
     transition: all 1s;
+    animation: bounce 3s linear;
 }
 
 #sidebarCollapse:hover {

@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('a[aria-expanded=true').attr('aria-expanded', 'false');
 
         if($('#sidebarCollapse').css('display') == 'none') {
-            $('#sidebarCollapse').css('display', 'block')
+            $('#sidebarCollapse').css('display', 'block');
         }else{
             $('#sidebarCollapse').css('display', 'none');
         }
