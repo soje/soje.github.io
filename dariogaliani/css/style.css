@@ -1,27 +1,11 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-/**  */
+
+/**  Stile Tag */
+
 html {
     scrollbar-color: transparent;
     scrollbar-width: thin;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 0px;
-    box-shadow: inset 0 0 6px rgba(2, 6, 245, 0.2);
-    -webkit-box-shadow: inset 0 0 6px rgba(153, 153, 153, 0.2);
-    background-color: rgba(153, 153, 153, 0.5);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    border-radius: 0px;
-    box-shadow: inset 0 0 6px rgba(2, 6, 245, 0.2);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    background-color: rgba(153, 153, 153, 0.5);
 }
 
 body {
@@ -45,6 +29,55 @@ a:focus {
     transition: all 0,3s;
 }
 
+footer {
+    background: #0043FD;
+    text-align: center;
+    margin: 0;
+}
+
+
+/** Stile Scrollbar Chrome */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px rgba(2, 6, 245, 0.2);
+    -webkit-box-shadow: inset 0 0 6px rgba(153, 153, 153, 0.2);
+    background-color: rgba(153, 153, 153, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 0px;
+    box-shadow: inset 0 0 6px rgba(2, 6, 245, 0.2);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: rgba(153, 153, 153, 0.5);
+}
+
+
+/** Container pagina */
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/** Header */
+
+.masterhead {
+    height: 100vh;
+    min-height: 500px;
+    background: rgb(53,232,73);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=) repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=), linear-gradient(45deg, rgba(53,232,73,1) 0%, rgba(0,66,254,1) 100%);
+     /** #35E849 , #0042FE */
+}
+
 .header-title, .header-subtitle {
     color: #fff;
 }
@@ -57,10 +90,8 @@ a:focus {
     font-size: 3em;
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-}
+
+/** Sidebar */
 
 #sidebar {
     width: 250px;
@@ -144,6 +175,9 @@ a[data-toggle="collapse"] {
     color: #0043FD;
     transition: all 1s;
 }
+
+
+/** Tasto apri menu laterale */
 
 @keyframes bounce {
     0%, 10%, to {
@@ -241,47 +275,8 @@ a[data-toggle="collapse"] {
     transition: all 1s;
 }
 
-#content{
-    width: 100%;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-}
 
-#content.active {
-    width: calc(100% - 250px);
-}
-
-.masterhead {
-    height: 100vh;
-    min-height: 500px;
-    background: rgb(53,232,73);
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=) repeat;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=), linear-gradient(45deg, rgba(53,232,73,1) 0%, rgba(0,66,254,1) 100%);
-     /** #35E849 , #0042FE */
-}
-
-.navbar {
-    width: calc(100% - 40px);
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0.2em;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
+/** separatore linea orizzontale */
 
 .line {
     width: 100%;
@@ -290,9 +285,29 @@ a[data-toggle="collapse"] {
     margin: 40px 0;
 }
 
+
+/** container pagina centrale*/
+
+#content{
+    transition: all 0.3s;
+    flex: 1;
+    overflow: hidden;
+}
+
+#content.active {
+    width: calc(100% - 250px);
+    transform: translateX(250px);
+}
+
+
+/** Container sezioni*/
+
 #content-sections {
     padding: 0px;
 }
+
+
+/** Container singole sezioni*/
 
 .container-sezioni {
     display: flex;
@@ -300,10 +315,14 @@ a[data-toggle="collapse"] {
     min-height: 100vh;
 }
 
+
+/** Sezione singola*/
+
 .sezioni {
     margin: auto;
     padding: 0px 50px;
 }
+
 
 @media (max-width: 768px) {
     
