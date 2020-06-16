@@ -35,6 +35,11 @@ footer {
     margin: 0;
 }
 
+footer p {
+    color: #fff;
+    margin: 10px;
+}
+
 
 /** Stile Scrollbar Chrome */
 
@@ -76,6 +81,10 @@ footer {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=) repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=), linear-gradient(45deg, rgba(53,232,73,1) 0%, rgba(0,66,254,1) 100%);
      /** #35E849 , #0042FE */
+}
+
+.img-profilo {
+    width: 20%;
 }
 
 .header-title, .header-subtitle {
@@ -300,29 +309,32 @@ a[data-toggle="collapse"] {
 }
 
 
-/** Container sezioni*/
-
-#content-sections {
-    padding: 0px;
-}
-
-
-/** Container singole sezioni*/
-
-.container-sezioni {
-    display: flex;
-    margin: 0;
-    min-height: 100vh;
-}
-
-
 /** Sezione singola*/
 
 .sezioni {
-    margin: auto;
-    padding: 0px 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
 }
 
+/** blocchi interni sezioni*/
+
+.blocco-testo {
+    flex: 1 100%;
+    padding: 50px;
+}
+
+.blocco-testo.singolo {
+    align-self: center;
+}
+
+.blocco-testo.piccolo {
+    flex: 1 30%;
+}
+
+.blocco-testo.grande {
+    flex: 1 50%;
+}
 
 @media (max-width: 768px) {
     
@@ -360,6 +372,12 @@ a[data-toggle="collapse"] {
     
     .sezioni {
         padding-top: 40px;
+    }
+
+    .blocco-testo {
+        flex: 1 100%;
+        border: 1px solid black;
+        margin: 50px;
     }
 
 }

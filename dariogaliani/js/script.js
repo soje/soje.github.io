@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function(){
-    var contentTop = $('#content-sections').offset().top,
+    var contentTop = $('#content').offset().top,
         altezzaScroll_Y = $(this).scrollTop();
 
         if(altezzaScroll_Y > contentTop) {
