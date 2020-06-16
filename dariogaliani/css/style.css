@@ -4,6 +4,7 @@
 /**  Stile Tag */
 
 html {
+    font-size: 1rem;
     scrollbar-color: transparent;
     scrollbar-width: thin;
 }
@@ -84,7 +85,7 @@ footer p {
 }
 
 .img-profilo {
-    width: 20%;
+    height: 40vh;
 }
 
 .header-title, .header-subtitle {
@@ -92,11 +93,11 @@ footer p {
 }
 
 .header-title {
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 .header-subtitle{
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 
@@ -128,9 +129,10 @@ footer p {
     border-bottom: 1px solid #47748b;
 }
 
-#sidebar ul p {
+#sidebar p {
     color: #fff;
     padding: 10px;
+    text-align: center;
 }
 
 #sidebar ul li a {
@@ -338,16 +340,20 @@ a[data-toggle="collapse"] {
 
 @media (max-width: 768px) {
     
+    html {
+        font-size: 0.8rem;
+    }
+
     p {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .header-title {
-        font-size: 45px;
+        font-size: 3rem;
     }
 
     .header-subtitle {
-        font-size: 25px;
+        font-size: 2rem;
     }
 
     #sidebar {

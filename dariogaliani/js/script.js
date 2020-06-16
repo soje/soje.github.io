@@ -10,9 +10,9 @@ $(document).ready(function() {
         }else{
             $('#sidebarCollapse').css('display', 'none');
         }
-
-
     });
+
+    console.log($('.img-profilo').width());
     
 });
 
