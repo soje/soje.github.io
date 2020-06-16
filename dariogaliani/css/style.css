@@ -34,6 +34,7 @@ footer {
     background: #0043FD;
     text-align: center;
     margin: 0;
+    display: none;
 }
 
 footer p {
@@ -158,6 +159,35 @@ ul ul a {
 
 a[data-toggle="collapse"] {
     position: relative;
+}
+
+.sidebar-social {
+    width: 250px;
+    position: fixed;
+}
+
+.sidebar-social ul li{
+    display: inline !important;
+}
+
+.sidebar-social ul li a{
+    display: inline !important;
+}
+
+.social-icon {
+    width: 10%;
+}
+
+.sidebar-footer {
+    width: 250px;
+    position: fixed;
+    bottom: 10px;
+}
+
+.sidebar-footer p {
+    font-size: 1em !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .dropdown-toggle::after {
