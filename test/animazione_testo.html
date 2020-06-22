@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animazione</title>
+
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+        html {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            height: 100vh;
+        }
+
+        body {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        p {
+            margin: 0;
+            font-size: 5rem;
+        }
+        
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .text {
+            position: absolute;
+            top: 100px;
+        }
+
+        @keyframes left-animation-uno {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes left-animation-due {
+            from {
+                transform: translateX(0);
+                opacity: 0;
+            }to {
+                transform: translateX(63px);
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes left-animation-tre {
+            from {
+                transform: translateX(0);
+                opacity: 0;
+            }to {
+                opacity: 1;
+                transform: translateX(84px);
+            }
+        }
+
+        @keyframes left-animation-quattro {
+            from {
+                opacity: 0;
+                transform: translateX(0);
+            }to {
+                opacity: 1;
+                transform: translateX(139px);
+            }
+        }
+
+        @keyframes right-animation-due {
+            from {
+                transform: translateX(63px);
+                opacity: 1;
+            }to {
+                opacity: 0;
+                transform: translateX(0);
+            }
+
+        }
+
+        @keyframes right-animation-tre {
+            from {
+                transform: translateX(84px);
+                opacity: 1;
+            }to {
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+
+        @keyframes right-animation-quattro {
+            from {
+                transform: translateX(139px);
+                opacity: 1;
+            }to {
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+
+        #char-uno {
+            opacity: 1;
+            z-index: 999;
+        }
+
+        #char-due {
+            opacity: 0;
+        }
+
+        #char-tre {
+            opacity: 0;
+        }
+
+        #char-quattro {
+            opacity: 0;
+        }
+
+        #char-uno.in {
+            opacity: 1;
+            z-index: 999;
+        }
+
+        #char-due.in {
+            animation: left-animation-due 1s forwards;
+        }
+
+        #char-tre.in {
+            animation: left-animation-tre 1s 1s forwards;
+        }
+
+        #char-quattro.in {
+            animation: left-animation-quattro 1s 2s forwards;
+        }
+
+        #char-due.out {
+            animation: right-animation-due 1s 2s backwards;
+        }
+
+        #char-tre.out {
+            animation: right-animation-tre 1s 1s backwards;
+        }
+
+        #char-quattro.out {
+            animation: right-animation-quattro 1s backwards;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <p class="animated-text">
+        <span id="char-uno" class="char-collapsed">C</span><span id="char-due" class="char-collapsed">I</span><span id="char-tre" class="char-collapsed">A</span><span id="char-quattro" class="char-collapsed">O</span>
+    </p>
+
+    <script>
+        var getSpanWidth = function(array) {
+
+            var widths = [];
+
+            for (i = 0; i < array.length; i++) {
+                var posInfo = array[i].getBoundingClientRect();
+                widths.push(posInfo.width);
+            }
+
+            return widths;
+        }
+        
+        /**
+        var logArrayWithIndex = function(array) {
+
+        }
+        */
+
+        var main = function() {
+            var spans = document.getElementsByClassName('char-collapsed');
+
+            values = getSpanWidth(spans);
+            //values.forEach(e => console.log(parseInt(e)));
+
+            var hovered = false, firstChar = spans[0];
+            console.log(firstChar.id);
+
+            firstChar.onmouseover = function() {
+                hovered = true;
+
+                for(i=0; i<values.length; i++) {
+                    spans[i].classList.remove("out");
+                    spans[i].classList.add("in");
+                }
+
+            }
+
+            firstChar.onmouseout = function() {
+                hovered = false;
+
+                for(i=0; i<values.length; i++) {
+                    spans[i].classList.remove("in");
+                    spans[i].classList.add("out");
+                }
+
+            }
+
+        }
+
+        if(document.readyState === "complete" || (document.readyState != "loading" && !document.documentElement.doScroll)){
+            main();
+        }else {
+            document.addEventListener("DOMContentLoaded", main);
+        }
+
+    </script>
+</body>
+</html>
