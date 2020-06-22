@@ -105,7 +105,7 @@
                 opacity: 0;
             }
         }
-
+        
         #char-uno {
             opacity: 1;
             z-index: 999;
@@ -152,7 +152,6 @@
             animation: right-animation-quattro 1s backwards;
         }
 
-
     </style>
 </head>
 <body>
@@ -173,12 +172,6 @@
 
             return widths;
         }
-        
-        /**
-        var logArrayWithIndex = function(array) {
-
-        }
-        */
 
         var main = function() {
             var spans = document.getElementsByClassName('char-collapsed');
@@ -186,8 +179,7 @@
             values = getSpanWidth(spans);
             //values.forEach(e => console.log(parseInt(e)));
 
-            var hovered = false, firstChar = spans[0];
-            console.log(firstChar.id);
+            var hovered = false, firstChar = spans[0], time;
 
             firstChar.onmouseover = function() {
                 hovered = true;
@@ -197,16 +189,27 @@
                     spans[i].classList.add("in");
                 }
 
+                time = setTimeout(function(){hovered=false}, 3000);
+
             }
 
             firstChar.onmouseout = function() {
-                hovered = false;
+                
+                if (hovered == true) {
+                    clearInterval(time);
+                    for(i=0; i<values.length; i++) {
+                        spans[i].classList.remove("in");
+                    }
+                    hovered = false;
 
-                for(i=0; i<values.length; i++) {
-                    spans[i].classList.remove("in");
-                    spans[i].classList.add("out");
+                } else {
+                    hovered = false;
+
+                    for(i=0; i<values.length; i++) {
+                        spans[i].classList.remove("in");
+                        spans[i].classList.add("out");
+                    }
                 }
-
             }
 
         }
