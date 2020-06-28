@@ -53,7 +53,7 @@
     <ul id="lista-animata">
         <li>
             <p id="elemento-la-1" class="elemento-la">
-                <span class="char-1 char-collapsed">C</span><span class="char-2 char-collapsed">H</span><span class="char-3 char-collapsed">I</span>&nbsp;<span class="char-4 char-collapsed">S</span><span class="char-5 char-collapsed">O</span><span class="char-6 char-collapsed">N</span><span class="char-7 char-collapsed">O</span>
+                <span class="char-1 char-collapsed">C</span><span class="char-2 char-collapsed">H</span><span class="char-3 char-collapsed">I</span><span class="char-4 char-collapsed">&nbsp;</span><span class="char-5 char-collapsed">S</span><span class="char-6 char-collapsed">O</span><span class="char-7 char-collapsed">N</span><span class="char-8 char-collapsed">O</span>
             </p>
         </li>
         <li>
@@ -98,20 +98,24 @@
 
         }
 
-        /**
-        var onOverEvent = function() {
-            console.log('over in: ' + this.innerHTML);
-        }
+        var setAnimWidthPropoerty = function(widths) {
+                
+            let values = widths, prefix = "--width-p-";
 
-        var onOverExitEvent = function () {
-            console.log('over out: ' + this.innerHTML);
+            for (let i=0; i<values.length; i++) {
+                let parspans = values[i], width = 0;
+                for(let j=0; j<parspans.length;j++){
+                    width += parspans[j];
+                    document.documentElement.style.setProperty(prefix + (i+1).toString() + '-span-' + (j+1).toString(), width.toString() + 'px');
+                }
+            }
         }
-        */
 
         var main = function() {
             
             var listLength = document.querySelectorAll('#lista-animata li').length,
             prefix = '#elemento-la-', paragraphsSpans = [];
+            let hovered = false, time;
 
             for (i=0; i<listLength; i++) {
                 el = i+1;
@@ -119,20 +123,52 @@
             }
 
             var widths = getSpanWidth(paragraphsSpans);
-            console.log(widths);
+            setAnimWidthPropoerty(widths);
 
             for (i=0; i<listLength; i++) {
                 var widths = [];
-                el = i+1;
+                let el = i+1;
 
-                firstChar = document.querySelector(prefix+el.toString() + ' .char-1');
+                let spans = document.querySelectorAll(prefix+el.toString() + ' .char-collapsed');
 
-                firstChar.onmouseover = function() {
-                    console.log('over in: ' + this.innerHTML);
+                spans[0].onmouseover = function() {
+                    
+                    hovered = true;
+
+                    for (let j=0; j<spans.length; j++){
+                        spans[j].classList.remove('out', 'break');
+                        spans[j].classList.add('in');
+                    }
+
+                    time = setTimeout(function() {
+                        hovered =  false
+                    }, 1500);
+
                 }
 
-                firstChar.onmouseout = function() {
-                    console.log('over out: ' + this.innerHTML);
+                spans[0].onmouseout = function() {
+                    
+                    if(hovered == true) {
+
+                        clearInterval(time);
+
+                        for (let j=0; j<spans.length; j++){
+                            spans[j].classList.remove('in');
+                            spans[j].classList.add('break');
+                        }
+
+                        hovered = false;
+
+                    }else {
+
+                        hovered = false
+
+                        for (let j=0; j<spans.length; j++){
+                            spans[j].classList.remove('in');
+                            spans[j].classList.add('out');
+                        }
+
+                    }
                 }
 
             }
