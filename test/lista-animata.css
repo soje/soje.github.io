@@ -1,0 +1,40 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+        
+:root {
+    --anim-duration: 0.5s;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+#lista-animata {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#lista-animata p {
+    font-size: 3rem;
+    height: 4rem;
+    margin: 0;
+}
+
+.char-collapsed {
+    opacity: 0;
+}
+
+.char-1 {
+    opacity: 1;
+    z-index: 999;
+}
+
+#elemento-la-1, #elemento-la-2, #elemento-la-3, #elemento-la-4, #elemento-la-5 {
+    position: relative;
+}
+
+#elemento-la-1 span, #elemento-la-2 span, #elemento-la-3 span, #elemento-la-4 span, #elemento-la-5 span {
+    position: absolute;
+    left: 0;
+}
