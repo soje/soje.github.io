@@ -2,6 +2,13 @@
         
 :root {
     --anim-duration: 0.5s;
+    --anim-delay-uno: 0.5s;
+    --anim-delay-due: 1s;
+    --anim-delay-tre: 1.5s;
+    --anim-delay-quattro: 2s;
+    --anim-delay-cinque: 2.5s;
+    --anim-delay-sei: 3s;
+    --anim-delay-sette: 3.5s;
 }
 
 html {
@@ -38,3 +45,1529 @@ html {
     position: absolute;
     left: 0;
 }
+
+/** Animazione paragrafo 1 Start*/
+
+/** Span 2 */
+@keyframes left-animation-p1-s2 {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-1));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-2.in {
+    animation: left-animation-p1-s2 var(--anim-duration) forwards;
+}
+
+@keyframes right-animation-p1-s2 {
+    from {
+        transform: translateX(var(--width-p-1-span-1));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+#elemento-la-1 .char-2.out {
+    animation: right-animation-p1-s2 var(--anim-duration) var(--anim-delay-cinque) backwards;
+}
+
+@keyframes break-animation-p1-s2 {
+    from {
+        transform: translateX(var(--width-p-1-span-1)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-1)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-2.break {
+    animation: break-animation-p1-s2 var(--anim-duration) forwards;
+}
+
+/** Span 3 */
+@keyframes left-animation-p1-s3 {
+    from {
+        transform: translateX(var(--width-p-1-span-1));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-2));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-3.in {
+    animation: left-animation-p1-s3 var(--anim-duration) var(--anim-delay-uno) forwards;
+}
+
+@keyframes right-animation-p1-s3 {
+    from {
+        transform: translateX(var(--width-p-1-span-2));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-1-span-1));
+    }
+}
+
+#elemento-la-1 .char-3.out {
+    animation: right-animation-p1-s3 var(--anim-duration) var(--anim-delay-quattro) backwards;
+}
+
+@keyframes break-animation-p1-s3 {
+    from {
+        transform: translateX(var(--width-p-1-span-2)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-2)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-3.break {
+    animation: break-animation-p1-s3 var(--anim-duration) forwards;
+}
+
+/** Span 4 */
+@keyframes left-animation-p1-s4 {
+    from {
+        transform: translateX(var(--width-p-1-span-2));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-3));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-4.in {
+    animation: left-animation-p1-s4 var(--anim-duration) var(--anim-delay-uno) forwards;
+}
+
+@keyframes right-animation-p1-s4 {
+    from {
+        transform: translateX(var(--width-p-1-span-3));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-1-span-2));
+    }
+}
+
+#elemento-la-1 .char-4.out {
+    animation: right-animation-p1-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
+}
+
+@keyframes break-animation-p1-s4 {
+    from {
+        transform: translateX(var(--width-p-1-span-3)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-3)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-4.break {
+    animation: break-animation-p1-s4 var(--anim-duration) forwards;
+}
+
+/** Span 5*/
+@keyframes left-animation-p1-s5 {
+    from {
+        transform: translateX(var(--width-p-1-span-3));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-4));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-5.in {
+    animation: left-animation-p1-s5 var(--anim-duration) var(--anim-delay-due) forwards;
+}
+
+@keyframes right-animation-p1-s5 {
+    from {
+        transform: translateX(var(--width-p-1-span-4));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-1-span-2));
+    }
+}
+
+#elemento-la-1 .char-5.out {
+    animation: right-animation-p1-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
+}
+
+@keyframes break-animation-p1-s5 {
+    from {
+        transform: translateX(var(--width-p-1-span-4)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-4)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-5.break {
+    animation: break-animation-p1-s5 var(--anim-duration) forwards;
+}
+
+/** Span 6*/
+@keyframes left-animation-p1-s6 {
+    from {
+        transform: translateX(var(--width-p-1-span-4));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-5));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-6.in {
+    animation: left-animation-p1-s6 var(--anim-duration) var(--anim-delay-tre) forwards;
+}
+
+@keyframes right-animation-p1-s6 {
+    from {
+        transform: translateX(var(--width-p-1-span-5));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-1-span-4));
+    }
+}
+
+#elemento-la-1 .char-6.out {
+    animation: right-animation-p1-s6 var(--anim-duration) var(--anim-delay-due) backwards;
+}
+
+@keyframes break-animation-p1-s6 {
+    from {
+        transform: translateX(var(--width-p-1-span-5)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-5)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-6.break {
+    animation: break-animation-p1-s6 var(--anim-duration) forwards;
+}
+
+/** Span 7*/
+@keyframes left-animation-p1-s7 {
+    from {
+        transform: translateX(var(--width-p-1-span-5));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-6));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-7.in {
+    animation: left-animation-p1-s7 var(--anim-duration) var(--anim-delay-quattro) forwards;
+}
+
+@keyframes right-animation-p1-s7 {
+    from {
+        transform: translateX(var(--width-p-1-span-6));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-1-span-5));
+    }
+}
+
+#elemento-la-1 .char-7.out {
+    animation: right-animation-p1-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
+}
+
+@keyframes break-animation-p1-s7 {
+    from {
+        transform: translateX(var(--width-p-1-span-6)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-6)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-7.break {
+    animation: break-animation-p1-s7 var(--anim-duration) forwards;
+}
+
+/** Span 8*/
+@keyframes left-animation-p1-s8 {
+    from {
+        transform: translateX(var(--width-p-1-span-6));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-1-span-7));
+        opacity: 1;
+    }
+}
+
+#elemento-la-1 .char-8.in {
+    animation: left-animation-p1-s8 var(--anim-duration) var(--anim-delay-cinque) forwards;
+}
+
+@keyframes right-animation-p1-s8 {
+    from {
+        transform: translateX(var(--width-p-1-span-7));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-1-span-6));
+    }
+}
+
+#elemento-la-1 .char-8.out {
+    animation: right-animation-p1-s8 var(--anim-duration) backwards;
+}
+
+@keyframes break-animation-p1-s8 {
+    from {
+        transform: translateX(var(--width-p-1-span-7)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-1-span-7)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-1 .char-8.break {
+    animation: break-animation-p1-s8 var(--anim-duration) forwards;
+}
+
+/** Animazione paragrafo 1 End*/
+
+/** Animazione paragrafo 2 Start */
+
+/** Span 2 */
+@keyframes left-animation-p2-s2 {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-1));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-2.in {
+    animation: left-animation-p2-s2 var(--anim-duration) forwards;
+}
+
+@keyframes right-animation-p2-s2 {
+    from {
+        transform: translateX(var(--width-p-2-span-1));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+#elemento-la-2 .char-2.out {
+    animation: right-animation-p2-s2 var(--anim-duration) var(--anim-delay-sette) backwards;
+}
+
+@keyframes break-animation-p2-s2 {
+    from {
+        transform: translateX(var(--width-p-2-span-1)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-1)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-2.break {
+    animation: break-animation-p2-s2 var(--anim-duration) forwards;
+}
+
+/** Span 3 */
+@keyframes left-animation-p2-s3 {
+    from {
+        transform: translateX(var(--width-p-2-span-1));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-2));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-3.in {
+    animation: left-animation-p2-s3 var(--anim-duration) var(--anim-delay-uno) forwards;
+}
+
+@keyframes right-animation-p2-s3 {
+    from {
+        transform: translateX(var(--width-p-2-span-2));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-1));
+    }
+}
+
+#elemento-la-2 .char-3.out {
+    animation: right-animation-p2-s3 var(--anim-duration) var(--anim-delay-sei) backwards;
+}
+
+@keyframes break-animation-p2-s3 {
+    from {
+        transform: translateX(var(--width-p-2-span-2)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-2)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-3.break {
+    animation: break-animation-p2-s3 var(--anim-duration) forwards;
+}
+
+/** Span 4 */
+@keyframes left-animation-p2-s4 {
+    from {
+        transform: translateX(var(--width-p-2-span-2));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-3));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-4.in {
+    animation: left-animation-p2-s4 var(--anim-duration) var(--anim-delay-due) forwards;
+}
+
+@keyframes right-animation-p2-s4 {
+    from {
+        transform: translateX(var(--width-p-2-span-3));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-2));
+    }
+}
+
+#elemento-la-2 .char-4.out {
+    animation: right-animation-p2-s4 var(--anim-duration) var(--anim-delay-cinque) backwards;
+}
+
+@keyframes break-animation-p2-s4 {
+    from {
+        transform: translateX(var(--width-p-2-span-3)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-3)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-4.break {
+    animation: break-animation-p2-s4 var(--anim-duration) forwards;
+}
+
+/** Span 5*/
+@keyframes left-animation-p2-s5 {
+    from {
+        transform: translateX(var(--width-p-2-span-3));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-4));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-5.in {
+    animation: left-animation-p2-s5 var(--anim-duration) var(--anim-delay-tre) forwards;
+}
+
+@keyframes right-animation-p2-s5 {
+    from {
+        transform: translateX(var(--width-p-2-span-4));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-3));
+    }
+}
+
+#elemento-la-2 .char-5.out {
+    animation: right-animation-p2-s5 var(--anim-duration) var(--anim-delay-quattro) backwards;
+}
+
+@keyframes break-animation-p2-s5 {
+    from {
+        transform: translateX(var(--width-p-2-span-4)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-4)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-5.break {
+    animation: break-animation-p2-s5 var(--anim-duration) forwards;
+}
+
+/** Span 6*/
+@keyframes left-animation-p2-s6 {
+    from {
+        transform: translateX(var(--width-p-2-span-4));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-5));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-6.in {
+    animation: left-animation-p2-s6 var(--anim-duration) var(--anim-delay-quattro) forwards;
+}
+
+@keyframes right-animation-p2-s6 {
+    from {
+        transform: translateX(var(--width-p-2-span-5));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-4));
+    }
+}
+
+#elemento-la-2 .char-6.out {
+    animation: right-animation-p2-s6 var(--anim-duration) var(--anim-delay-tre) backwards;
+}
+
+@keyframes break-animation-p2-s6 {
+    from {
+        transform: translateX(var(--width-p-2-span-5)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-5)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-6.break {
+    animation: break-animation-p2-s6 var(--anim-duration) forwards;
+}
+
+/** Span 7*/
+@keyframes left-animation-p2-s7 {
+    from {
+        transform: translateX(var(--width-p-2-span-5));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-6));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-7.in {
+    animation: left-animation-p2-s7 var(--anim-duration) var(--anim-delay-cinque) forwards;
+}
+
+@keyframes right-animation-p2-s7 {
+    from {
+        transform: translateX(var(--width-p-2-span-6));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-5));
+    }
+}
+
+#elemento-la-2 .char-7.out {
+    animation: right-animation-p2-s7 var(--anim-duration) var(--anim-delay-due) backwards;
+}
+
+@keyframes break-animation-p2-s7 {
+    from {
+        transform: translateX(var(--width-p-2-span-6)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-6)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-7.break {
+    animation: break-animation-p2-s7 var(--anim-duration) forwards;
+}
+
+/** Span 8*/
+@keyframes left-animation-p2-s8 {
+    from {
+        transform: translateX(var(--width-p-2-span-6));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-7));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-8.in {
+    animation: left-animation-p2-s8 var(--anim-duration) var(--anim-delay-sei) forwards;
+}
+
+@keyframes right-animation-p2-s8 {
+    from {
+        transform: translateX(var(--width-p-2-span-7));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-6));
+    }
+}
+
+#elemento-la-2 .char-8.out {
+    animation: right-animation-p2-s8 var(--anim-duration) var(--anim-delay-uno) backwards;
+}
+
+@keyframes break-animation-p2-s8 {
+    from {
+        transform: translateX(var(--width-p-2-span-7)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-7)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-8.break {
+    animation: break-animation-p2-s8 var(--anim-duration) forwards;
+}
+
+/** Span 9*/
+@keyframes left-animation-p2-s9 {
+    from {
+        transform: translateX(var(--width-p-2-span-7));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-2-span-8));
+        opacity: 1;
+    }
+}
+
+#elemento-la-2 .char-9.in {
+    animation: left-animation-p2-s9 var(--anim-duration) var(--anim-delay-sette) forwards;
+}
+
+@keyframes right-animation-p2-s9 {
+    from {
+        transform: translateX(var(--width-p-2-span-8));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-2-span-7));
+    }
+}
+
+#elemento-la-2 .char-9.out {
+    animation: right-animation-p2-s8 var(--anim-duration) backwards;
+}
+
+@keyframes break-animation-p2-s9 {
+    from {
+        transform: translateX(var(--width-p-2-span-8)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-2-span-8)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-2 .char-9.break {
+    animation: break-animation-p2-s9 var(--anim-duration) forwards;
+}
+
+/** Animazione paragrafo 2 End */
+
+/** Animazione paragrafo 3 Start */
+
+/** Span 2 */
+@keyframes left-animation-p3-s2 {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-3-span-1));
+        opacity: 1;
+    }
+}
+
+#elemento-la-3 .char-2.in {
+    animation: left-animation-p3-s2 var(--anim-duration) forwards;
+}
+
+@keyframes right-animation-p3-s2 {
+    from {
+        transform: translateX(var(--width-p-3-span-1));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+#elemento-la-3 .char-2.out {
+    animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-cinque) backwards;
+}
+
+@keyframes break-animation-p3-s2 {
+    from {
+        transform: translateX(var(--width-p-3-span-1)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-3-span-1)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-3 .char-2.break {
+    animation: break-animation-p3-s2 var(--anim-duration) forwards;
+}
+
+/** Span 3 */
+@keyframes left-animation-p3-s3 {
+    from {
+        transform: translateX(var(--width-p-3-span-1));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-3-span-2));
+        opacity: 1;
+    }
+}
+
+#elemento-la-3 .char-3.in {
+    animation: left-animation-p3-s3 var(--anim-duration) var(--anim-delay-uno) forwards;
+}
+
+@keyframes right-animation-p3-s3 {
+    from {
+        transform: translateX(var(--width-p-3-span-2));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-3-span-1));
+    }
+}
+
+#elemento-la-3 .char-3.out {
+    animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-quattro) backwards;
+}
+
+@keyframes break-animation-p3-s3 {
+    from {
+        transform: translateX(var(--width-p-3-span-2)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-3-span-2)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-3 .char-3.break {
+    animation: break-animation-p3-s3 var(--anim-duration) forwards;
+}
+
+/** Span 4 */
+@keyframes left-animation-p3-s4 {
+    from {
+        transform: translateX(var(--width-p-3-span-2));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-3-span-3));
+        opacity: 1;
+    }
+}
+
+#elemento-la-3 .char-4.in {
+    animation: left-animation-p3-s4 var(--anim-duration) var(--anim-delay-due) forwards;
+}
+
+@keyframes right-animation-p3-s4 {
+    from {
+        transform: translateX(var(--width-p-3-span-3));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-3-span-2));
+    }
+}
+
+#elemento-la-3 .char-4.out {
+    animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-tre) backwards;
+}
+
+@keyframes break-animation-p3-s4 {
+    from {
+        transform: translateX(var(--width-p-3-span-3)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-3-span-3)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-3 .char-4.break {
+    animation: break-animation-p3-s4 var(--anim-duration) forwards;
+}
+
+/** Span 5*/
+@keyframes left-animation-p3-s5 {
+    from {
+        transform: translateX(var(--width-p-3-span-3));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-3-span-4));
+        opacity: 1;
+    }
+}
+
+#elemento-la-3 .char-5.in {
+    animation: left-animation-p3-s5 var(--anim-duration) var(--anim-delay-tre) forwards;
+}
+
+@keyframes right-animation-p3-s5 {
+    from {
+        transform: translateX(var(--width-p-3-span-4));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-3-span-3));
+    }
+}
+
+#elemento-la-3 .char-5.out {
+    animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-due) backwards;
+}
+
+@keyframes break-animation-p3-s5 {
+    from {
+        transform: translateX(var(--width-p-3-span-4)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-3-span-4)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-3 .char-5.break {
+    animation: break-animation-p3-s5 var(--anim-duration) forwards;
+}
+
+/** Span 6*/
+@keyframes left-animation-p3-s6 {
+    from {
+        transform: translateX(var(--width-p-3-span-4));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-3-span-5));
+        opacity: 1;
+    }
+}
+
+#elemento-la-3 .char-6.in {
+    animation: left-animation-p3-s6 var(--anim-duration) var(--anim-delay-quattro) forwards;
+}
+
+@keyframes right-animation-p3-s6 {
+    from {
+        transform: translateX(var(--width-p-3-span-5));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-3-span-4));
+    }
+}
+
+#elemento-la-3 .char-6.out {
+    animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-uno) backwards;
+}
+
+@keyframes break-animation-p3-s6 {
+    from {
+        transform: translateX(var(--width-p-3-span-5)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-3-span-5)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-3 .char-6.break {
+    animation: break-animation-p3-s6 var(--anim-duration) forwards;
+}
+
+/** Span 7*/
+@keyframes left-animation-p3-s7 {
+    from {
+        transform: translateX(var(--width-p-3-span-5));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-3-span-6));
+        opacity: 1;
+    }
+}
+
+#elemento-la-3 .char-7.in {
+    animation: left-animation-p3-s7 var(--anim-duration) var(--anim-delay-cinque) forwards;
+}
+
+@keyframes right-animation-p3-s7 {
+    from {
+        transform: translateX(var(--width-p-3-span-6));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-3-span-5));
+    }
+}
+
+#elemento-la-3 .char-7.out {
+    animation: right-animation-p3-s7 var(--anim-duration) backwards;
+}
+
+@keyframes break-animation-p3-s7 {
+    from {
+        transform: translateX(var(--width-p-3-span-6)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-3-span-6)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-3 .char-7.break {
+    animation: break-animation-p3-s7 var(--anim-duration) forwards;
+}
+
+/** Animazione paragrafo 3 End */
+
+/** Animazione paragrafo 4 Start */
+
+/** Span 2 */
+@keyframes left-animation-p4-s2 {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-1));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-2.in {
+    animation: left-animation-p4-s2 var(--anim-duration) forwards;
+}
+
+@keyframes right-animation-p4-s2 {
+    from {
+        transform: translateX(var(--width-p-4-span-1));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+#elemento-la-4 .char-2.out {
+    animation: right-animation-p4-s2 var(--anim-duration) var(--anim-delay-sei) backwards;
+}
+
+@keyframes break-animation-p4-s2 {
+    from {
+        transform: translateX(var(--width-p-4-span-1)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-1)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-2.break {
+    animation: break-animation-p4-s2 var(--anim-duration) forwards;
+}
+
+/** Span 3 */
+@keyframes left-animation-p4-s3 {
+    from {
+        transform: translateX(var(--width-p-4-span-1));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-2));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-3.in {
+    animation: left-animation-p4-s3 var(--anim-duration) var(--anim-delay-uno) forwards;
+}
+
+@keyframes right-animation-p4-s3 {
+    from {
+        transform: translateX(var(--width-p-4-span-2));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-4-span-1));
+    }
+}
+
+#elemento-la-4 .char-3.out {
+    animation: right-animation-p4-s3 var(--anim-duration) var(--anim-delay-cinque) backwards;
+}
+
+@keyframes break-animation-p4-s3 {
+    from {
+        transform: translateX(var(--width-p-4-span-2)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-2)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-3.break {
+    animation: break-animation-p4-s3 var(--anim-duration) forwards;
+}
+
+/** Span 4 */
+@keyframes left-animation-p4-s4 {
+    from {
+        transform: translateX(var(--width-p-4-span-2));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-3));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-4.in {
+    animation: left-animation-p4-s4 var(--anim-duration) var(--anim-delay-due) forwards;
+}
+
+@keyframes right-animation-p4-s4 {
+    from {
+        transform: translateX(var(--width-p-4-span-3));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-4-span-2));
+    }
+}
+
+#elemento-la-4 .char-4.out {
+    animation: right-animation-p4-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
+}
+
+@keyframes break-animation-p4-s4 {
+    from {
+        transform: translateX(var(--width-p-4-span-3)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-3)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-4.break {
+    animation: break-animation-p4-s4 var(--anim-duration) forwards;
+}
+
+/** Span 5*/
+@keyframes left-animation-p4-s5 {
+    from {
+        transform: translateX(var(--width-p-4-span-3));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-4));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-5.in {
+    animation: left-animation-p4-s5 var(--anim-duration) var(--anim-delay-tre) forwards;
+}
+
+@keyframes right-animation-p4-s5 {
+    from {
+        transform: translateX(var(--width-p-4-span-4));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-4-span-3));
+    }
+}
+
+#elemento-la-4 .char-5.out {
+    animation: right-animation-p4-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
+}
+
+@keyframes break-animation-p4-s5 {
+    from {
+        transform: translateX(var(--width-p-4-span-4)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-4)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-5.break {
+    animation: break-animation-p4-s5 var(--anim-duration) forwards;
+}
+
+/** Span 6*/
+@keyframes left-animation-p4-s6 {
+    from {
+        transform: translateX(var(--width-p-4-span-4));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-5));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-6.in {
+    animation: left-animation-p4-s6 var(--anim-duration) var(--anim-delay-quattro) forwards;
+}
+
+@keyframes right-animation-p4-s6 {
+    from {
+        transform: translateX(var(--width-p-4-span-5));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-4-span-4));
+    }
+}
+
+#elemento-la-4 .char-6.out {
+    animation: right-animation-p4-s6 var(--anim-duration) var(--anim-delay-due) backwards;
+}
+
+@keyframes break-animation-p4-s6 {
+    from {
+        transform: translateX(var(--width-p-4-span-5)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-5)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-6.break {
+    animation: break-animation-p4-s6 var(--anim-duration) forwards;
+}
+
+/** Span 7*/
+@keyframes left-animation-p4-s7 {
+    from {
+        transform: translateX(var(--width-p-4-span-5));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-6));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-7.in {
+    animation: left-animation-p4-s7 var(--anim-duration) var(--anim-delay-cinque) forwards;
+}
+
+@keyframes right-animation-p4-s7 {
+    from {
+        transform: translateX(var(--width-p-4-span-6));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-4-span-5));
+    }
+}
+
+#elemento-la-4 .char-7.out {
+    animation: right-animation-p4-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
+}
+
+@keyframes break-animation-p4-s7 {
+    from {
+        transform: translateX(var(--width-p-4-span-6)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-6)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-7.break {
+    animation: break-animation-p4-s7 var(--anim-duration) forwards;
+}
+
+/** Span 8*/
+@keyframes left-animation-p4-s8 {
+    from {
+        transform: translateX(var(--width-p-4-span-6));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-4-span-7));
+        opacity: 1;
+    }
+}
+
+#elemento-la-4 .char-8.in {
+    animation: left-animation-p4-s8 var(--anim-duration) var(--anim-delay-sei) forwards;
+}
+
+@keyframes right-animation-p4-s8 {
+    from {
+        transform: translateX(var(--width-p-4-span-7));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-4-span-6));
+    }
+}
+
+#elemento-la-4 .char-8.out {
+    animation: right-animation-p4-s8 var(--anim-duration) backwards;
+}
+
+@keyframes break-animation-p4-s8 {
+    from {
+        transform: translateX(var(--width-p-4-span-7)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-4-span-7)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-4 .char-8.break {
+    animation: break-animation-p4-s8 var(--anim-duration) forwards;
+}
+
+
+/** Animazione paragrafo 4 End */
+
+/** Animazione paragrafo 5 Start */
+
+/** Span 2 */
+@keyframes left-animation-p5-s2 {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-1));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-2.in {
+    animation: left-animation-p5-s2 var(--anim-duration) forwards;
+}
+
+@keyframes right-animation-p5-s2 {
+    from {
+        transform: translateX(var(--width-p-5-span-1));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+#elemento-la-5 .char-2.out {
+    animation: right-animation-p5-s2 var(--anim-duration) var(--anim-delay-sei) backwards;
+}
+
+@keyframes break-animation-p5-s2 {
+    from {
+        transform: translateX(var(--width-p-5-span-1)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-1)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-2.break {
+    animation: break-animation-p5-s2 var(--anim-duration) forwards;
+}
+
+/** Span 3 */
+@keyframes left-animation-p5-s3 {
+    from {
+        transform: translateX(var(--width-p-5-span-1));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-2));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-3.in {
+    animation: left-animation-p5-s3 var(--anim-duration) var(--anim-delay-uno) forwards;
+}
+
+@keyframes right-animation-p5-s3 {
+    from {
+        transform: translateX(var(--width-p-5-span-2));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-5-span-1));
+    }
+}
+
+#elemento-la-5 .char-3.out {
+    animation: right-animation-p5-s3 var(--anim-duration) var(--anim-delay-cinque) backwards;
+}
+
+@keyframes break-animation-p5-s3 {
+    from {
+        transform: translateX(var(--width-p-5-span-2)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-2)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-3.break {
+    animation: break-animation-p5-s3 var(--anim-duration) forwards;
+}
+
+/** Span 4 */
+@keyframes left-animation-p5-s4 {
+    from {
+        transform: translateX(var(--width-p-5-span-2));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-3));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-4.in {
+    animation: left-animation-p5-s4 var(--anim-duration) var(--anim-delay-due) forwards;
+}
+
+@keyframes right-animation-p5-s4 {
+    from {
+        transform: translateX(var(--width-p-5-span-3));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-5-span-2));
+    }
+}
+
+#elemento-la-5 .char-4.out {
+    animation: right-animation-p5-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
+}
+
+@keyframes break-animation-p5-s4 {
+    from {
+        transform: translateX(var(--width-p-5-span-3)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-3)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-4.break {
+    animation: break-animation-p5-s4 var(--anim-duration) forwards;
+}
+
+/** Span 5*/
+@keyframes left-animation-p5-s5 {
+    from {
+        transform: translateX(var(--width-p-5-span-3));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-4));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-5.in {
+    animation: left-animation-p5-s5 var(--anim-duration) var(--anim-delay-tre) forwards;
+}
+
+@keyframes right-animation-p5-s5 {
+    from {
+        transform: translateX(var(--width-p-5-span-4));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-5-span-3));
+    }
+}
+
+#elemento-la-5 .char-5.out {
+    animation: right-animation-p5-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
+}
+
+@keyframes break-animation-p5-s5 {
+    from {
+        transform: translateX(var(--width-p-5-span-4)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-4)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-5.break {
+    animation: break-animation-p5-s5 var(--anim-duration) forwards;
+}
+
+/** Span 6*/
+@keyframes left-animation-p5-s6 {
+    from {
+        transform: translateX(var(--width-p-5-span-4));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-5));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-6.in {
+    animation: left-animation-p5-s6 var(--anim-duration) var(--anim-delay-quattro) forwards;
+}
+
+@keyframes right-animation-p5-s6 {
+    from {
+        transform: translateX(var(--width-p-5-span-5));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-5-span-4));
+    }
+}
+
+#elemento-la-5 .char-6.out {
+    animation: right-animation-p5-s6 var(--anim-duration) var(--anim-delay-due) backwards;
+}
+
+@keyframes break-animation-p5-s6 {
+    from {
+        transform: translateX(var(--width-p-5-span-5)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-5)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-6.break {
+    animation: break-animation-p5-s6 var(--anim-duration) forwards;
+}
+
+/** Span 7*/
+@keyframes left-animation-p5-s7 {
+    from {
+        transform: translateX(var(--width-p-5-span-5));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-6));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-7.in {
+    animation: left-animation-p5-s7 var(--anim-duration) var(--anim-delay-cinque) forwards;
+}
+
+@keyframes right-animation-p5-s7 {
+    from {
+        transform: translateX(var(--width-p-5-span-6));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-5-span-5));
+    }
+}
+
+#elemento-la-5 .char-7.out {
+    animation: right-animation-p5-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
+}
+
+@keyframes break-animation-p5-s7 {
+    from {
+        transform: translateX(var(--width-p-5-span-6)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-6)) translateY(10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-7.break {
+    animation: break-animation-p5-s7 var(--anim-duration) forwards;
+}
+
+/** Span 8*/
+@keyframes left-animation-p5-s8 {
+    from {
+        transform: translateX(var(--width-p-5-span-6));
+        opacity: 0;
+    }to {
+        transform: translateX(var(--width-p-5-span-7));
+        opacity: 1;
+    }
+}
+
+#elemento-la-5 .char-8.in {
+    animation: left-animation-p5-s8 var(--anim-duration) var(--anim-delay-sei) forwards;
+}
+
+@keyframes right-animation-p5-s8 {
+    from {
+        transform: translateX(var(--width-p-5-span-7));
+        opacity: 1;
+    }to {
+        opacity: 0;
+        transform: translateX(var(--width-p-5-span-6));
+    }
+}
+
+#elemento-la-5 .char-8.out {
+    animation: right-animation-p5-s8 var(--anim-duration) backwards;
+}
+
+@keyframes break-animation-p5-s8 {
+    from {
+        transform: translateX(var(--width-p-5-span-7)) translateY(0);
+        opacity: 1;
+    }to {
+        transform: translateX(var(--width-p-5-span-7)) translateY(-10%);
+        opacity: 0;
+    }
+}
+
+#elemento-la-5 .char-8.break {
+    animation: break-animation-p5-s8 var(--anim-duration) forwards;
+}
+
+/** Animazione paragrafo 5 End */
