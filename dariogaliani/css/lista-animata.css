@@ -1,5 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-        
 :root {
     --anim-duration: 0.5s;
     --anim-delay-uno: 0.5s;
@@ -11,19 +9,20 @@
     --anim-delay-sette: 3.5s;
 }
 
-html {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-}
-
 #lista-animata {
     list-style-type: none;
-    padding-left: 20px;
     margin: 0;
+    padding: 0;
+    text-indent: -1rem;
+}
+
+#lista-animata li {
+    display: table;
+    margin: 0px auto 0px auto;
 }
 
 #lista-animata p {
-    font-size: 3rem;
+    font-size: 2rem;
     height: 4rem;
     margin: 0;
 }
@@ -44,6 +43,10 @@ html {
 #elemento-la-1 span, #elemento-la-2 span, #elemento-la-3 span, #elemento-la-4 span, #elemento-la-5 span {
     position: absolute;
     left: 0;
+}
+
+#elemento-la-2, #elemento-la-4{
+    color: #f66;
 }
 
 /** Animazione paragrafo 1 Start*/
