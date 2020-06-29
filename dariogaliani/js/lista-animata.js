@@ -33,7 +33,6 @@ var main = function() {
     
     var listLength = document.querySelectorAll('#lista-animata li').length,
     prefix = '#elemento-la-', paragraphsSpans = [];
-    let hovered = false, time;
 
     for (i=0; i<listLength; i++) {
         el = i+1;
@@ -48,9 +47,11 @@ var main = function() {
         let el = i+1;
 
         let spans = document.querySelectorAll(prefix+el.toString() + ' .char-collapsed');
+        
+        let hovered = false, time;
 
         spans[0].onmouseover = function() {
-            
+
             hovered = true;
 
             for (let j=0; j<spans.length; j++){
@@ -59,13 +60,13 @@ var main = function() {
             }
 
             time = setTimeout(function() {
-                hovered =  false
+                hovered =  false;
             }, 1500);
 
         }
 
         spans[0].onmouseout = function() {
-            
+
             if(hovered == true) {
 
                 clearInterval(time);
@@ -79,14 +80,15 @@ var main = function() {
 
             }else {
 
-                hovered = false
-
                 for (let j=0; j<spans.length; j++){
                     spans[j].classList.remove('in');
                     spans[j].classList.add('out');
                 }
 
+                hovered = false
+
             }
+
         }
 
     }
