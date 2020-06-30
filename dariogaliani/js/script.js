@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
 
     $('#sidebarCollapse, #dismiss').on('click', function() {
         $('#sidebar, #content').toggleClass('active');
@@ -45,4 +45,4 @@ $(window).scroll(function(){
             }
         }
 
-});
+}); */
