@@ -2560,10 +2560,10 @@
 }
 
 #elemento-la-3 .char-2.out {
-    -webkit-animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-cinque) backwards;
-    -moz-animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-cinque) backwards;
-    -o-animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-cinque) backwards;
-    animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-cinque) backwards;
+    -webkit-animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-sei) backwards;
+    -moz-animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-sei) backwards;
+    -o-animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-sei) backwards;
+    animation: right-animation-p3-s2 var(--anim-duration) var(--anim-delay-sei) backwards;
 }
 
 @-webkit-keyframes break-animation-p3-s2 {
@@ -2702,10 +2702,10 @@
 }
 
 #elemento-la-3 .char-3.out {
-    -webkit-animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-quattro) backwards;
-    -moz-animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-quattro) backwards;
-    -o-animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-quattro) backwards;
-    animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-quattro) backwards;
+    -webkit-animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-cinque) backwards;
+    -moz-animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-cinque) backwards;
+    -o-animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-cinque) backwards;
+    animation: right-animation-p3-s3 var(--anim-duration) var(--anim-delay-cinque) backwards;
 }
 
 @-webkit-keyframes break-animation-p3-s3 {
@@ -2844,10 +2844,10 @@
 }
 
 #elemento-la-3 .char-4.out {
-    -webkit-animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-tre) backwards;
-    -moz-animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-tre) backwards;
-    -o-animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-tre) backwards;
-    animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-tre) backwards;
+    -webkit-animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
+    -moz-animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
+    -o-animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
+    animation: right-animation-p3-s4 var(--anim-duration) var(--anim-delay-quattro) backwards;
 }
 
 @-webkit-keyframes break-animation-p3-s4 {
@@ -2986,10 +2986,10 @@
 }
 
 #elemento-la-3 .char-5.out {
-    -webkit-animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-due) backwards;
-    -moz-animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-due) backwards;
-    -o-animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-due) backwards;
-    animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-due) backwards;
+    -webkit-animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
+    -moz-animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
+    -o-animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
+    animation: right-animation-p3-s5 var(--anim-duration) var(--anim-delay-tre) backwards;
 }
 
 @-webkit-keyframes break-animation-p3-s5 {
@@ -3128,10 +3128,10 @@
 }
 
 #elemento-la-3 .char-6.out {
-    -webkit-animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-uno) backwards;
-    -moz-animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-uno) backwards;
-    -o-animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-uno) backwards;
-    animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-uno) backwards;
+    -webkit-animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-due) backwards;
+    -moz-animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-due) backwards;
+    -o-animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-due) backwards;
+    animation: right-animation-p3-s6 var(--anim-duration) var(--anim-delay-due) backwards;
 }
 
 @-webkit-keyframes break-animation-p3-s6 {
@@ -3270,10 +3270,10 @@
 }
 
 #elemento-la-3 .char-7.out {
-    -webkit-animation: right-animation-p3-s7 var(--anim-duration) backwards;
-    -moz-animation: right-animation-p3-s7 var(--anim-duration) backwards;
-    -o-animation: right-animation-p3-s7 var(--anim-duration) backwards;
-    animation: right-animation-p3-s7 var(--anim-duration) backwards;
+    -webkit-animation: right-animation-p3-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
+    -moz-animation: right-animation-p3-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
+    -o-animation: right-animation-p3-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
+    animation: right-animation-p3-s7 var(--anim-duration) var(--anim-delay-uno) backwards;
 }
 
 @-webkit-keyframes break-animation-p3-s7 {
