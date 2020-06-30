@@ -32,7 +32,7 @@ var setAnimWidthPropoerty = function(widths) {
 var main = function() {
     
     var listLength = document.querySelectorAll('#lista-animata li').length,
-    prefix = '#elemento-la-', paragraphsSpans = [];
+    prefix = '#elemento-la-', paragraphsSpans = [], animTimes = ['3000', '3500', '2500', '3000', '3000'];
 
     for (i=0; i<listLength; i++) {
         el = i+1;
@@ -42,15 +42,12 @@ var main = function() {
     var widths = getSpanWidth(paragraphsSpans);
     setAnimWidthPropoerty(widths);
 
-    for (i=0; i<listLength; i++) {
-        var widths = [];
-        let el = i+1;
+    for (let i=0; i<listLength; i++) {
 
-        let spans = document.querySelectorAll(prefix+el.toString() + ' .char-collapsed');
-        
-        let hovered = false, time;
+        let el = i+1, spans = document.querySelectorAll(prefix+el.toString() + ' .char-collapsed'),
+        hovered = false, time;
 
-        spans[0].onmouseover = function() {
+        spans[0].onmouseenter = function() {
 
             hovered = true;
 
@@ -61,11 +58,11 @@ var main = function() {
 
             time = setTimeout(function() {
                 hovered =  false;
-            }, 1500);
+            }, animTimes[i]);
 
         }
 
-        spans[0].onmouseout = function() {
+        spans[0].onmouseleave = function() {
 
             if(hovered == true) {
 
