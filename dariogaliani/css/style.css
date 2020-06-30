@@ -14,7 +14,7 @@ body {
     background: #fafafa;
 }
 
-p {
+p{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
@@ -28,13 +28,13 @@ a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0,3s;
+    color: #999;
 }
 
 footer {
-    background: #0043FD;
+    background: #f66;
     text-align: center;
     margin: 0;
-    display: none;
 }
 
 footer p {
@@ -79,25 +79,83 @@ footer p {
 .masterhead {
     height: 100vh;
     min-height: 500px;
-    background: rgb(53,232,73);
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=) repeat;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEUlEQVQImWNgIAO4/PuPzAUAHxcCQnp8mOEAAAAASUVORK5CYII=), linear-gradient(45deg, rgba(53,232,73,1) 0%, rgba(0,66,254,1) 100%);
-     /** #35E849 , #0042FE */
+    background: #333;
+    position: relative;
 }
 
-.img-profilo {
-    height: 40vh;
+.m-sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 100vh;
+    border-right: 3px solid #f66;
+}
+
+.m-content{
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 100vh;
+    left: 80px;
+}
+
+.m-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.m-title-red {
+    color: #f66;
+}
+
+.m-nav {
+    width: 80px;
+    text-align: center;
+}
+
+.m-nav li a {
+    font-size: 1.6rem;
+}
+
+.m-nav-l-hide {
+    display: none;
+}
+
+.m-nav-l-hide.show {
+    display: block;
+}
+
+.m-social {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.m-social-icon {
+    width: 2rem;
+    margin-bottom: 15px;
+}
+
+.title {
+    position: relative;
+    width: 60%;
+    left: 5%;
+    top: 85%;
+    transform: translateY(-100%);
 }
 
 .header-title, .header-subtitle {
-    color: #fff;
+    margin-bottom: 0;
 }
 
 .header-title {
+    color: #999;
     font-size: 5rem;
 }
 
 .header-subtitle{
+    color: #f66;
     font-size: 3rem;
 }
 

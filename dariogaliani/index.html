@@ -12,7 +12,9 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lista-animata.css">
 
+        <script src="js/lista-animata.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
@@ -22,7 +24,7 @@
         <div class="wrapper">
             
             <!-- Sidebar  -->
-            <nav id="sidebar">
+<!--             <nav id="sidebar">
                 
                 <div id="dismiss">
                     <i class="fas fa-times"></i>
@@ -105,29 +107,77 @@
                     <p>Copyright<sup>©</sup> 2020</p>
                 </div>
 
-            </nav>
+            </nav> -->
 
             <!-- Header-->
             <header class="masterhead">
-                <div class="container-fluid h-100">
-
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 text-center">
-                            <h1 class="header-title">Dario Galiani</h1>
-                            <h3 class="header-subtitle lead">Web e Software Developer</h3>
-                        </div>
+                <div class="m-sidebar">
+                    <p class="m-title"><span class="m-title-red">D</span><span class="m-title-grey">G</span></p>
+                    <ul id="lista-animata">
+                        <li>
+                            <p id="elemento-la-1" class="elemento-la">
+                                <span class="char-1 char-collapsed"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</span><span class="char-2 char-collapsed">C</span><span class="char-3 char-collapsed">H</span><span class="char-4 char-collapsed">I</span><span class="char-5 char-collapsed">&nbsp;</span><span class="char-6 char-collapsed">S</span><span class="char-7 char-collapsed">O</span><span class="char-8 char-collapsed">N</span><span class="char-9 char-collapsed">O</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p id="elemento-la-2" class="elemento-la">
+                                <span class="char-1 char-collapsed"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</span><span class="char-2 char-collapsed">P</span><span class="char-3 char-collapsed">O</span><span class="char-4 char-collapsed">R</span><span class="char-5 char-collapsed">T</span><span class="char-6 char-collapsed">F</span><span class="char-7 char-collapsed">O</span><span class="char-8 char-collapsed">L</span><span class="char-9 char-collapsed">I</span><span class="char-10 char-collapsed">O</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p id="elemento-la-3" class="elemento-la">
+                                <span class="char-1 char-collapsed"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</span><span class="char-2 char-collapsed">S</span><span class="char-3 char-collapsed">E</span><span class="char-4 char-collapsed">R</span><span class="char-5 char-collapsed">V</span><span class="char-6 char-collapsed">I</span><span class="char-7 char-collapsed">Z</span><span class="char-8 char-collapsed">I</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p id="elemento-la-4" class="elemento-la">
+                                <span class="char-1 char-collapsed"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</span><span class="char-2 char-collapsed">C</span><span class="char-3 char-collapsed">O</span><span class="char-4 char-collapsed">N</span><span class="char-5 char-collapsed">T</span><span class="char-6 char-collapsed">A</span><span class="char-7 char-collapsed">T</span><span class="char-8 char-collapsed">T</span><span class="char-9 char-collapsed">I</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p id="elemento-la-5" class="elemento-la">
+                                <span class="char-1 char-collapsed"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</span><span class="char-2 char-collapsed">A</span><span class="char-3 char-collapsed">R</span><span class="char-4 char-collapsed">T</span><span class="char-5 char-collapsed">I</span><span class="char-6 char-collapsed">C</span><span class="char-7 char-collapsed">O</span><span class="char-8 char-collapsed">L</span><span class="char-9 char-collapsed">I</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled m-social">
+                        <li>
+                            <a href="#">
+                                <img class="m-social-icon" src="../pagina_di_cortesia/assets/img/instagram.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="m-social-icon" src="../pagina_di_cortesia/assets/img/facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="m-social-icon" src="../pagina_di_cortesia/assets/img/linkedin.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="m-social-icon" src="../pagina_di_cortesia/assets/img/github.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m-content">
+                    <div class="title">
+                        <h1 class="header-title">Dario Galiani</h1>
+                        <h3 class="header-subtitle lead">Developer</h3>
                     </div>
-                    
                 </div>
             </header>
 
             <!-- Main  -->
             <main id="content">
                 
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
+<!--                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-angle-right"></i>
                     <span></span>
-                </button>
+                </button> -->
 
                 <section id="chisono" class="sezioni">
                     <div class="blocco-testo descrizione">
