@@ -137,6 +137,14 @@ footer p {
     margin-bottom: 15px;
 }
 
+.m-social-icon.rosso {
+    filter: invert(65%) sepia(53%) saturate(2369%) hue-rotate(316deg) brightness(97%) contrast(107%);
+}
+
+.m-social-icon.grigio {
+    filter: invert(67%) sepia(7%) saturate(11%) hue-rotate(6deg) brightness(91%) contrast(84%);
+}
+
 .title {
     position: relative;
     width: 60%;
@@ -157,6 +165,36 @@ footer p {
 .header-subtitle{
     color: #f66;
     font-size: 3rem;
+}
+
+
+/** Navbar */
+
+.navibar {
+    position: fixed;
+    right: 1.5rem;
+    top: 1.5rem;
+    background: #333;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    z-index: 999;
+}
+
+.navibar a {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+.navibar a:last-child {
+    margin-right: 0;
+}
+
+.navibar a:nth-child(even) {
+    color: #f66;
+}
+
+.navibar a:hover {
+    text-decoration: underline;
 }
 
 
