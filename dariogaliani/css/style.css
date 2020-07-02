@@ -80,13 +80,6 @@ a:focus {
     border-left: 3px solid #f66;
 }
 
-.m-content{
-    position: absolute;
-    width: calc(100% - 80px);
-    height: 100vh;
-    left: 80px;
-}
-
 .m-title {
     text-align: center;
     font-size: 2rem;
@@ -94,23 +87,6 @@ a:focus {
 
 .m-title-red {
     color: #f66;
-}
-
-.m-nav {
-    width: 80px;
-    text-align: center;
-}
-
-.m-nav li a {
-    font-size: 1.6rem;
-}
-
-.m-nav-l-hide {
-    display: none;
-}
-
-.m-nav-l-hide.show {
-    display: block;
 }
 
 .m-social {
