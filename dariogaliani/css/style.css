@@ -31,6 +31,10 @@ a:focus {
     color: #999;
 }
 
+.rosso {
+    color: #f66;
+}
+
 /** Stile Scrollbar Chrome */
 
 ::-webkit-scrollbar {
@@ -71,6 +75,7 @@ a:focus {
     position: relative;
 }
 
+/** Header Sidebar*/
 .m-sidebar {
     position: absolute;
     left: 0;
@@ -109,12 +114,23 @@ a:focus {
     filter: invert(67%) sepia(7%) saturate(11%) hue-rotate(6deg) brightness(91%) contrast(84%);
 }
 
+
+/** Header right content */
+
+.m-content{
+    position: absolute;
+    top: 0;
+    width: calc(100% - 80px);
+    height: 100vh;
+    left: 80px;
+    display: flex;
+}
+
 .title {
-    position: relative;
-    width: 60%;
-    left: 5%;
-    top: 85%;
-    transform: translateY(-100%);
+    flex: 1 50%;
+    align-self: flex-end;
+    margin-bottom: 10%;
+    margin-left: 5%;
 }
 
 .header-title, .header-subtitle {
@@ -129,6 +145,34 @@ a:focus {
 .header-subtitle{
     color: #f66;
     font-size: 3rem;
+}
+
+.m-call-to-action {
+    flex: 1 50%;
+    display: flex;
+    margin-top: 10%;
+    align-content: center;
+    flex-direction: column;
+}
+
+.m-call-to-action p {
+    font-size: 5rem;
+    margin: 0;
+    padding-right: 3%;
+    text-align: center;
+}
+
+#call-to-action-b-wrapp {
+    display: flex;
+    justify-content: center;
+}
+
+#call-to-action-b {
+    font-size: 4rem;
+    color: #333;
+    border: none;
+    box-shadow: #fff 3px 3px;
+    background-color: #f66;
 }
 
 
@@ -538,14 +582,6 @@ footer p {
         font-size: 1.2rem;
     }
 
-    .header-title {
-        font-size: 3rem;
-    }
-
-    .header-subtitle {
-        font-size: 2rem;
-    }
-
     #sidebar {
         margin-left: -250px;
     }
@@ -574,6 +610,41 @@ footer p {
         flex: 1 100%;
         border: 1px solid black;
         margin: 50px;
+    }
+
+    .m-content {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .title {
+        align-self: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-subtitle {
+        font-size: 2rem;
+    }
+
+    .m-call-to-action {
+        align-self: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .m-call-to-action p {
+        text-align: right;
+    }
+
+    .m-call-to-action p,
+    #call-to-action-b {
+        font-size: 2rem;
     }
 
 }
