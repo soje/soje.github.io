@@ -73,6 +73,7 @@ a:focus {
     min-height: 500px;
     background: #333;
     position: relative;
+    margin-bottom: 100px;
 }
 
 /** Header Sidebar*/
@@ -156,7 +157,7 @@ a:focus {
 }
 
 .m-call-to-action p {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
     padding-right: 3%;
     text-align: center;
@@ -168,7 +169,7 @@ a:focus {
 }
 
 #call-to-action-b {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #333;
     border: none;
     box-shadow: #fff 3px 3px;
@@ -178,6 +179,36 @@ a:focus {
 
 /** Navbar */
 
+@-webkit-keyframes navi-show {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    } to{
+        transform: translateY(1rem);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes navi-show {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    } to{
+        transform: translateY(1rem);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes navi-show {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    } to{
+        transform: translateY(1rem);
+        opacity: 1;
+    }
+}
+
 @keyframes navi-show {
     from {
         transform: translateY(-1rem);
@@ -185,6 +216,36 @@ a:focus {
     } to{
         transform: translateY(1rem);
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes navi-hide {
+    from {
+        transform: translateY(1rem);
+        opacity: 1;
+    } to{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes navi-hide {
+    from {
+        transform: translateY(1rem);
+        opacity: 1;
+    } to{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes navi-hide {
+    from {
+        transform: translateY(1rem);
+        opacity: 1;
+    } to{
+        transform: translateY(-1rem);
+        opacity: 0;
     }
 }
 
@@ -197,7 +258,6 @@ a:focus {
         opacity: 0;
     }
 }
-
 .navibar {
     position: fixed;
     right: 1.5rem;
@@ -211,11 +271,17 @@ a:focus {
 
 .navibar.hide {
     display: block;
+    -webkit-animation: navi-hide 0.3s backwards;
+    -moz-animation: navi-hide 0.3s backwards;
+    -o-animation: navi-hide 0.3s backwards;
     animation: navi-hide 0.3s backwards;
 }
 
 .navibar.show {
     display: block;
+    -webkit-animation: navi-show 0.3s forwards;
+    -moz-animation: navi-show 0.3s forwards;
+    -o-animation: navi-show 0.3s forwards;
     animation: navi-show 0.3s forwards;
 }
 
@@ -245,218 +311,30 @@ a:focus {
     text-decoration: underline;
 }
 
-/** Sidebar */
 
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100vh;
-    z-index: 999;
-    background: #0043FD;
-    color: #fff;
-    transition: all 0.3s;
-}
+/** Footer */
 
-#sidebar.active {
-    margin-left: 250px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #0043FD;
-}
-
-#sidebar ul.components {
-    padding: 0px 0;
-    border-bottom: 1px solid #47748b;
-}
-
-#sidebar p {
-    color: #fff;
-    padding: 10px;
+footer {
     text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
+footer p {
     color: #fff;
-    background: rgb(0, 58, 219);
+    margin: 10px;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #0043FD;
+#footer-credits {
+    background-color: #333;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-ul ul a {
-    font-size: 0.9em !important;
-    background: #0043FD;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.sidebar-social {
-    width: 250px;
-    position: fixed;
-}
-
-.sidebar-social ul li{
-    display: inline !important;
-}
-
-.sidebar-social ul li a{
-    display: inline !important;
-}
-
-.social-icon {
-    width: 10%;
-}
-
-.sidebar-footer {
-    width: 250px;
-    position: fixed;
-    bottom: 10px;
-}
-
-.sidebar-footer p {
-    font-size: 1em !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-#dismiss {
-    position: absolute;
-    text-align: center;
-    line-height: 35px;
-    top: 20px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
-    background-color: #0043FD;
-    border-radius: 0.3em;
-    transition: all 1s;
-}
-
-#dismiss:hover {
-    background: #fff;
-    color: #0043FD;
-    transition: all 1s;
-}
-
-
-/** Tasto apri menu laterale */
-
-@keyframes bounce {
-    0%, 10%, to {
-        transform: translateX(-50px);
-    }
-    20%, 40%, to {
-        transform: translateX(20px);
-    }
-    40% {
-        transform: translateX(0px);
-    }
-    50%, 90%, to {
-        transform: translateX(10px);
-    }
-    90%, 100%, to {
-        transform: translateX(0);
-    }
-}
-
-@-o-keyframes bounce {
-    0%, 10%, to {
-        transform: translateX(-50px);
-    }
-    20%, 40%, to {
-        transform: translateX(20px);
-    }
-    40% {
-        transform: translateX(0px);
-    }
-    50%, 90%, to {
-        transform: translateX(10px);
-    }
-    90%, 100%, to {
-        transform: translateX(0);
-    }
-}
-
-@-webkit-keyframes bounce {
-    0%, 10%, to {
-        transform: translateX(-50px);
-    }
-    20%, 40%, to {
-        transform: translateX(20px);
-    }
-    40% {
-        transform: translateX(0px);
-    }
-    50%, 90%, to {
-        transform: translateX(10px);
-    }
-    90%, 100%, to {
-        transform: translateX(0);
-    }
-}
-
-@-moz-keyframes bounce {
-    0%, 10%, to {
-        transform: translateX(-50px);
-    }
-    20%, 40%, to {
-        transform: translateX(20px);
-    }
-    40% {
-        transform: translateX(0px);
-    }
-    50%, 90%, to {
-        transform: translateX(10px);
-    }
-    90%, 100%, to {
-        transform: translateX(0);
-    }
-}
-
-#sidebarCollapse {
-    background: transparent;
-    color: #0043FD;
-    border: none;
-    border-radius: none;
-    position: fixed;
-    left: 0px;
-    top: 50%;
-    display: none;
-    transition: all 1s;
-    -webkit-animation: bounce 3s linear;
-    -moz-animation: bounce 3s linear;
-    -ms-animation: bounce 3s linear;
-    -o-animation: bounce 3s linear;
-    animation: bounce 3s linear;
-}
-
-#sidebarCollapse:hover {
-    background: #0043FD;
-    color: #fff;
-    border-radius: 0%;
-    transition: all 1s;
+#footer-copywrigth {
+    background-color: #f66;
 }
 
 
@@ -475,21 +353,69 @@ a[data-toggle="collapse"] {
 #content{
     transition: all 0.3s;
     flex: 1;
-    overflow: hidden;
-}
-
-#content.active {
-    width: calc(100% - 250px);
-    transform: translateX(250px);
 }
 
 
 /** Sezione singola*/
 
-.sezioni {
+.sezioni{
     min-height: 100vh;
     display: flex;
     flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/** Article chi sono*/
+.sinistra,
+.destra {
+    min-height: 200vh;
+    flex: 1 50%;
+    display: flex;
+    position: relative;
+}
+
+.sinistra img {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 1000px;
+}
+
+.text-wrap {
+    align-self: flex-end;
+    margin: 5rem;
+}
+
+.destra p {
+    color: #999;
+    font-size: 2rem;
+}
+
+.destra h1 {
+    position: relative;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.destra h1::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 20px;
+    left: 0;
+    width: 45%;
+    height: 10px;
+    background-color: rgba(255, 102, 102, 0.582);
+    z-index: -999;
+}
+
+.destra p strong {
+    color: #333;
 }
 
 /** blocchi interni sezioni*/
@@ -501,8 +427,8 @@ a[data-toggle="collapse"] {
 
 #chisono {
     margin-top: 80px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #chisono div {
@@ -513,10 +439,6 @@ a[data-toggle="collapse"] {
 #chisono .descrizione {
     border-left: 1px solid black;
     border-bottom: 1px solid black;
-}
-
-#chisono .immagine {
-    
 }
 
 #chisono .immagine img{
@@ -547,30 +469,7 @@ a[data-toggle="collapse"] {
     flex: 1 50%;
 }
 
-/** Footer */
-
-footer {
-    text-align: center;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-footer p {
-    color: #fff;
-    margin: 10px;
-}
-
-#footer-credits {
-    background-color: #333;
-    height: 20vh;
-    display: flex;
-    justify-content: space-around;
-}
-
-#footer-copywrigth {
-    background-color: #f66;
-}
+/** Responsive Mobile */
 
 @media (max-width: 768px) {
     
@@ -646,5 +545,13 @@ footer p {
     #call-to-action-b {
         font-size: 2rem;
     }
+
+    .sinistra,
+    .centro,
+    .destra {
+        flex: 1 100%;
+        border: 1px solid black;
+    }
+
 
 }

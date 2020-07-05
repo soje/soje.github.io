@@ -1,0 +1,122 @@
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lista animata</title>
+
+        <link rel="stylesheet" type="text/css" href="lista-animata.css">
+
+        <style>
+            @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+            html {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+            }
+
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 1.7em;
+            }
+
+            .sezioni{
+                min-height: 100vh;
+                display: flex;
+                flex-flow: row wrap;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .sinistra,
+            .destra {
+                min-height: 155vh;
+                flex: 1 50%;
+                display: flex;
+                position: relative;
+            }
+
+            .sinistra img {
+                position: -webkit-sticky;
+                position: sticky;
+                left: 0;
+                top: 0;
+                height: 1000px;
+            }
+
+            .text-wrap {
+                align-self: flex-end;
+                margin: 5rem;
+            }
+
+            .destra p {
+                color: #999;
+            }
+
+            .destra h1 {
+                position: relative;
+                text-align: left;
+                font-family: 'Poppins', sans-serif;
+                font-size: 5rem;
+                font-weight: 500;
+                color: #333;
+            }
+
+            .destra h1::after {
+                position: absolute;
+                display: block;
+                content: '';
+                bottom: 30px;
+                left: 0;
+                width: 50%;
+                height: 10px;
+                background-color: rgba(255, 102, 102, 0.582);
+                z-index: -999;
+            }
+
+            .destra p strong {
+                color: #333;
+            }
+
+            @media screen and (max-width: 768px) {
+                
+                .sinistra,
+                .centro,
+                .destra {
+                    flex: 1 100%;
+                    border: 1px solid black;
+                }
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <article id="chi-sono">
+            <section id="sezione-1" class="sezioni">
+                <div id="col-1" class="sinistra">
+                    <img src="../dariogaliani/assets/img/chi-sono-pro-pic.png" alt="">
+                </div>
+                <div id="col-2" class="destra">
+                    <div class="text-wrap">
+                        <h1>Chi Sono</h1>
+                        <p>
+                            Nato con la <strong>passione</strong> per la tecnologia e il <strong>desiderio</strong> di diventare programmatore.
+                            Diplomato al liceo scientifico. Iscritto al corso di laurea del <strong>Dipartimento di Informatica 
+                            dell’Università degli Studi Salerno</strong> dove ho completato tutti gli esami ad ambito informatico 
+                            con ottimi voti, me ne restano tre per completare il ciclo di laurea. 
+                            Sono attivo da un anno come <strong>sviluppatore freelance indipendente</strong>. 
+                            Appassionato di reti, cloud computing e IoT con uno sguardo alle intelligenze artificiali.
+                            Nella mia vita <strong>non</strong> possono mancare cinema, musica, yoga e filosofia 
+                            che sono ciò che portano equilibrio nella forza, sono di natura razionale e realista, 
+                            mi definisco un nietzschiano epicureo che ha vissuto felicemente fino a che non ha conosciuto Martin Heidegger.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </body>
+</html>
