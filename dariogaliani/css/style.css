@@ -76,6 +76,13 @@ a:focus {
     margin-bottom: 100px;
 }
 
+#masterhead-bottom-decorator {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+
 /** Header Sidebar*/
 .m-sidebar {
     position: absolute;
