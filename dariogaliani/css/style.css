@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
-/**  Stile Tag */
+/**  Stile Tag Generici */
 
 html {
     font-size: 1rem;
@@ -14,9 +14,18 @@ body {
     background: #fafafa;
 }
 
+h1 {
+    position: relative;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #333;
+}
+
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
@@ -29,10 +38,6 @@ a:focus {
     text-decoration: none;
     transition: all 0,3s;
     color: #999;
-}
-
-.rosso {
-    color: #f66;
 }
 
 /** Stile Scrollbar Chrome */
@@ -91,6 +96,10 @@ a:focus {
     width: 80px;
     height: 100vh;
     border-left: 3px solid #f66;
+}
+
+.rosso {
+    color: #f66;
 }
 
 .m-title {
@@ -265,6 +274,7 @@ a:focus {
         opacity: 0;
     }
 }
+
 .navibar {
     position: fixed;
     right: 1.5rem;
@@ -368,16 +378,14 @@ footer p {
 .sezioni{
     min-height: 100vh;
     display: flex;
-    flex-flow: row wrap;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 /** Article chi sono*/
 .sinistra,
 .destra {
-    min-height: 200vh;
-    flex: 1 50%;
+    min-height: 170vh;
+    flex: 1 auto;
     display: flex;
     position: relative;
 }
@@ -392,21 +400,17 @@ footer p {
 
 .text-wrap {
     align-self: flex-end;
-    margin: 5rem;
+    margin: 10rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .destra p {
     color: #999;
-    font-size: 2rem;
 }
 
 .destra h1 {
-    position: relative;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 5rem;
-    font-weight: 500;
-    color: #333;
+    margin: 0 auto 0 0;
 }
 
 .destra h1::after {
@@ -415,7 +419,7 @@ footer p {
     content: '';
     bottom: 20px;
     left: 0;
-    width: 45%;
+    width: 100%;
     height: 10px;
     background-color: rgba(255, 102, 102, 0.582);
     z-index: -999;
@@ -425,7 +429,7 @@ footer p {
     color: #333;
 }
 
-/** blocchi interni sezioni*/
+/** blocchi interni sezione chi sono*/
 
 .blocco-testo {
     flex: 1 100%;
@@ -461,6 +465,32 @@ footer p {
 
 #chisono .descrizione p {
     width: 100%;
+}
+
+
+/** Article portfolio*/
+
+#portfolio {
+    margin-top: 15vh;
+}
+
+#sezione-2-1 h1 {
+    text-align: center;
+    margin: 0 auto;
+    align-self: flex-start;
+}
+
+#portfolio h1::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+    background-color: rgba(255, 102, 102, 0.582);
+    z-index: -999;
 }
 
 .blocco-testo.singolo {

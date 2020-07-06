@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+        /**  Stile Tag Generici */
+        
+        html {
+            font-size: 1rem;
+            scrollbar-color: transparent;
+            scrollbar-width: thin;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+        }
+
+        h1 {
+            position: relative;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            font-size: 5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 1.7em;
+            color: #999;
+        }
+        
+        a, 
+        a:hover, 
+        a:focus {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0,3s;
+            color: #999;
+        }
+        
+        /** Stile Scrollbar Chrome */
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 0px;
+            box-shadow: inset 0 0 6px rgba(2, 6, 245, 0.2);
+            -webkit-box-shadow: inset 0 0 6px rgba(153, 153, 153, 0.2);
+            background-color: rgba(153, 153, 153, 0.5);
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            border-radius: 0px;
+            box-shadow: inset 0 0 6px rgba(2, 6, 245, 0.2);
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+            background-color: rgba(153, 153, 153, 0.5);
+        }
+
+        /** Sezione singola*/
+        .sezioni {
+            min-height: 100vh;
+            display: flex;
+        }
+        
+        #sezione-2-1 {
+            flex-direction: column;
+        }
+
+        #sezione-2-1 h1 {
+            text-align: center;
+            margin: 0 auto;
+            align-self: flex-start;
+        }
+        
+        #portfolio h1::after {
+            position: absolute;
+            display: block;
+            content: '';
+            bottom: 30px;
+            width: 100%;
+            height: 10px;
+            background-color: rgba(255, 102, 102, 0.582);
+            z-index: -999;
+        }
+        
+        #portfolio-tiles-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem 15rem 0 15rem;
+        }
+
+        #portfolio-tiles-wrapper div {
+            flex: 1 auto;
+            text-align: center;
+        }
+
+        .portfolio-tile {
+            min-height: 45vh;
+            display: flex;
+            flex-direction: row;
+            border-radius: 1rem;
+            box-shadow: black 4px 5px 10px;
+        }
+
+        #portfolio-tiles-wrapper .riga {
+            margin: 5rem 0 0 0;
+        }
+
+        #portfolio-tiles-wrapper .riga:first-child {
+            margin: 0;
+        }
+
+        #portfolio-tiles-wrapper .riga:last-child {
+            margin: 5rem 0 5rem 0;
+        }
+
+        #portfolio-tiles-wrapper .riga:nth-child(even) .portfolio-tile-sinistra {
+            flex: 1 30%;
+            border-radius: 1rem 0 0 1rem;
+        }
+
+        #portfolio-tiles-wrapper .riga:nth-child(even) .portfolio-tile-destra {
+            flex: 1 60%;
+            border-radius: 0 1rem 1rem 0;
+        }
+
+        #portfolio-tiles-wrapper .riga:nth-child(odd) .portfolio-tile-sinistra {
+            flex: 1 60%;
+            border-radius: 1rem 0 0 1rem;
+        }
+
+        #portfolio-tiles-wrapper .riga:nth-child(odd) .portfolio-tile-destra {
+            flex: 1 30%;
+            border-radius: 0 1rem 1rem 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <article id="portfolio">
+        <section id="sezione-2-1" class="sezioni">
+            <h1>Portfolio</h1>
+            <div id="portfolio-tiles-wrapper">
+                <div id="riga-1" class="riga">
+                    <div id="hint-system" class="portfolio-tile">
+                        <div class="portfolio-tile-sinistra">
+                            Tile Sinistra
+                        </div>
+                        <div class="portfolio-tile-destra">
+                            Tile Destra
+                        </div>
+                    </div>
+                </div>
+                <div id="riga-2" class="riga">
+                    <div id="crypto" class="portfolio-tile">
+                        <div class="portfolio-tile-sinistra">
+                            Tile Sinistra
+                        </div>
+                        <div class="portfolio-tile-destra">
+                            Tile Destra
+                        </div>
+                    </div>
+                </div>
+                <div id="riga-3" class="riga">
+                    <div id="board" class="portfolio-tile">
+                        <div class="portfolio-tile-sinistra">
+                            Tile Sinistra
+                        </div>
+                        <div class="portfolio-tile-destra">
+                            Tile Destra
+                        </div>
+                    </div>
+                </div>
+                <div id="riga-4" class="riga">
+                    <div id="locker" class="portfolio-tile">
+                        <div class="portfolio-tile-sinistra">
+                            Tile Sinistra
+                        </div>
+                        <div class="portfolio-tile-destra">
+                            Tile Destra
+                        </div>
+                    </div>
+                </div>
+                <div id="riga-5" class="riga">
+                    <div id="yogastudioaversa" class="portfolio-tile">
+                        <div class="portfolio-tile-sinistra">
+                            Tile Sinistra
+                        </div>
+                        <div class="portfolio-tile-destra">
+                            Tile Destra
+                        </div>
+                    </div>
+                </div>
+                <div id="riga-3" class="riga">
+                    <div id="dariogalianicom" class="portfolio-tile">
+                        <div class="portfolio-tile-sinistra">
+                            Tile Sinistra
+                        </div>
+                        <div class="portfolio-tile-destra">
+                            Tile Destra
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
