@@ -531,12 +531,13 @@ footer p {
 
 #portfolio-tiles-wrapper .riga:nth-child(even) .portfolio-tile-sinistra,
 #portfolio-tiles-wrapper .riga:nth-child(odd) .portfolio-tile-destra {
-    flex: 1 auto;
+    flex: 1 40%;
     display: flex;
 }
 
 #portfolio-tiles-wrapper .riga:nth-child(even) .portfolio-tile-destra,
 #portfolio-tiles-wrapper .riga:nth-child(odd) .portfolio-tile-sinistra {
+    flex: 1 60%;
     display: grid;
     grid-template-rows: 15% 85%;
 }
