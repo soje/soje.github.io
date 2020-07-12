@@ -341,6 +341,7 @@ footer {
 footer p {
     color: #fff;
     margin: 10px;
+    font-size: 1.5rem;
 }
 
 #footer-credits {
@@ -378,7 +379,9 @@ footer p {
 .sezioni{
     min-height: 100vh;
     display: flex;
+    position: relative;
     flex-direction: row;
+    padding-top: 40px;
 }
 
 /** Article chi sono*/
@@ -466,23 +469,24 @@ footer p {
 #chisono .descrizione p {
     width: 100%;
 }
+
 /** Article portfolio*/
 
 #sezione-2-1 {
     flex-direction: column;
 }
 
-#sezione-2-1 h1 {
+.sezioni h1 {
     text-align: center;
     margin: 0 auto;
     align-self: flex-start;
 }
 
 #portfolio {
-    margin: 100px 0 0 0;
+    margin: 200px 0 0 0;
 }
 
-#portfolio h1::after {
+.sezioni h1::after {
     position: absolute;
     display: block;
     content: '';
@@ -559,6 +563,18 @@ footer p {
     width: 90%;
 }
 
+.riga {
+    background-color: #fff;
+}
+
+.descrizione button {
+    background-color: #f66;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: #333 3px 3px 3px;
+    color: #333;
+}
+
 .blocco-testo.singolo {
     align-self: center;
 }
@@ -602,10 +618,6 @@ footer p {
 
     #sidebarCollapse span {
         display: none;
-    }
-    
-    .sezioni {
-        padding-top: 40px;
     }
 
     .blocco-testo {
