@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container-info,
+        .info-progetto,
+        .info {
+            display: flex;
+        }
+
+        .container-info {
+            flex-flow: row wrap;
+        }
+
+        .container-info > * {
+            flex: 1 100%;
+        }
+
+        .info-progetto > * {
+            flex: 1 50%;
+        }
+
+        .info > :first-child {
+            flex: 1 20%;
+        }
+
+        .info > :nth-child(2) {
+            flex: 1 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container-info">
+        <div class="titolo-progetto">
+            <h2>Progetto Hello World</h2>
+        </div>
+        <div class="info-progetto">
+            <div class="col-1">
+                <div class="info">
+                    <div class="img-info">
+                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">
+                    </div>
+                    <div class="testo-info">
+                        <h4>Titolo</h4>
+                        <p>Info</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="img-info">
+                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">    
+                    </div>
+                    <div class="testo-info">
+                        <h4>Titolo</h4>
+                        <p>Info</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="info">
+                    <div class="img-info">
+                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">
+                    </div>
+                    <div class="testo-info">
+                        <h4>Titolo</h4>
+                        <p>Info</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="img-info">
+                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">
+                    </div>
+                    <div class="testo-info">
+                        <h4>Titolo</h4>
+                        <p>Info</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

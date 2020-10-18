@@ -15,49 +15,65 @@
         <main>
 
             <section class="riga riga-1" id="info-base">
-
                 <div class="col-1">
                     <img class="img-progetto" src="./assets/img/img-placeholder-2000x1334.jpg" alt="">
                 </div>
                 <div class="col-2">
-                    <div>
-                        <div class="info-categoria">
-                            <img class="img-categoria" src="./assets/img/img-placeholder-circle.png" alt="">
-                            <div class="text-info-categoria">
-                                <h4>Data</h4>
-                                <p>gg/mm/aa</p>
-                            </div>
+                    <div class="container-info">
+                        <div class="titolo-progetto">
+                            <h2>Progetto Hello World</h2>
                         </div>
-                        <div class="info-categoria">
-                            <img class="img-categoria" src="./assets/img/img-placeholder-circle.png" alt="">
-                            <div class="text-info-categoria">
-                                <h4>Piattaforma</h4>
-                                <p>n/a</p>
+                        <div class="info-progetto">
+                            <div>
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">
+                                    </div>
+                                    <div class="testo-info">
+                                        <h4>Data</h4>
+                                        <p>gg/mm/yyyy</p>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">    
+                                    </div>
+                                    <div class="testo-info">
+                                        <h4>Categoria</h4>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="info-categoria">
-                            <img class="img-categoria" src="./assets/img/img-placeholder-circle.png" alt="">
-                            <div class="text-info-categoria">
-                                <h4>Cliente</h4>
-                                <p>n/a</p>
-                            </div>
-                        </div>
-                        <div class="info-categoria">
-                            <img class="img-categoria" src="./assets/img/img-placeholder-circle.png" alt="">
-                            <div class="text-info-categoria">
-                                <h4>Categoria</h4>
-                                <p>n/a</p>
+                            <div>
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">
+                                    </div>
+                                    <div class="testo-info">
+                                        <h4>Cliente</h4>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <div class="img-info">
+                                        <img src="../dariogaliani/assets/img/img-placeholder-circle.png" alt="">
+                                    </div>
+                                    <div class="testo-info">
+                                        <h4>Piattaforma</h4>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+                <path fill="#f66" fill-opacity="1" d="M0,32L60,53.3C120,75,240,117,360,122.7C480,128,600,96,720,69.3C840,43,960,21,1080,26.7C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+            </svg>
 
             <section class="riga riga-2" id="descrizione">
-                <h2>Paragrafo 1</h2>
+                <h3>Paragrafo 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Natus, ex officiis minus voluptate, architecto necessitatibus 
                     illum tempora amet, reiciendis odit rem quia! A, dignissimos. 
@@ -83,7 +99,7 @@
                     illum tempora amet, reiciendis odit rem quia! A, dignissimos. 
                     Necessitatibus in praesentium dignissimos non error.
                 </p>
-                <h2>Paragrafo 2</h2>
+                <h3>Paragrafo 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Natus, ex officiis minus voluptate, architecto necessitatibus 
                     illum tempora amet, reiciendis odit rem quia! A, dignissimos. 
@@ -112,7 +128,28 @@
             </section>
 
             <section class="riga riga-3" id="contattami">
-                <input type="button" value="Contattami" onclick="">
+                <div class="container-contatti">
+                    <div class="contatti-form">
+                        <div class="visible">
+                            <h2>Contattami</h2>
+                        </div>
+                        <div class="hidden">
+                            <div>
+                                <div class="form__group">
+                                    <input type="text" class="form__field" placeholder="Nome" name="nome" id="nome" required>
+                                    <label for="nome" class="form__label">Nome</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__field" placeholder="email" name="email" id="email" required>
+                                    <label for="email" class="form__label">Email</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="button" value="Invio" onclick="console.log('Cliccato');">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </main>

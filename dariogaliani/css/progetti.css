@@ -8,6 +8,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
+    background-color: #ebebeb;
 }
 
 header {
@@ -17,14 +18,31 @@ header {
 
 header h1 {
     color: #f66;
-    font-size: 3.5rem;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 header,
 .riga,
 .col-1,
 .col-2,
-.info-categoria{
+.info-categoria,
+.contattami-container {
     display: flex;
 }
 
@@ -54,11 +72,211 @@ header h1,
 }
 
 .riga-2, 
-.info-categoria {
+.info-categoria,
+.contattami-container {
     flex-flow: row wrap;
 }
 
-.riga-2 > * {
+.riga-2 > *,
+.contattami-container > * {
     flex: 1 100%;
+}
+
+.riga-2 > * {
     margin: 10px 200px;
+}
+
+.contattami-container > * {
+    margin: 10px 100px;
+}
+
+.container-info,
+.info-progetto,
+.info {
+    display: flex;
+}
+
+.container-info {
+    flex-flow: row wrap;
+}
+
+.container-info > * {
+    flex: 1 100%;
+}
+
+.info-progetto > * {
+    flex: 1 50%;
+}
+
+.info > :first-child {
+    flex: 1 30%;
+    margin: auto;
+}
+
+.info > :nth-child(2) {
+    flex: 1 70%;
+}
+
+.info > :nth-child(2) h4,
+.info > :nth-child(2) p {
+    margin-left: 30px;
+}
+
+.info > :nth-child(2) h4 {
+    margin-bottom: 0;
+}
+
+.info > :nth-child(2) p {
+    margin-top: 0;
+}
+
+img {
+    width: 100%;
+}
+
+#info-base {
+    background-color: #f66;
+}
+
+/** Sezione contatti*/
+.container-contatti {
+    height: 85vh;
+    display: flex;
+    margin: auto;
+}
+
+#contattami {
+    position: relative;
+}
+
+#contattami::after {
+    content: '';
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+}
+
+.contatti-form{
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    box-shadow: 2px 0px 2px #999;
+}
+
+.contatti-form .visible {
+    flex: 1 35%;
+    background-color: #f66;
+    display: flex;
+    position: relative;
+}
+
+.contatti-form .visible > * {
+    color: #fff;
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+.contatti-form .visible h2 {
+    position: relative;
+    z-index: 999;
+}
+
+.contatti-form .visible h2::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #333;
+    width: 60%;
+    height: 15%;
+    bottom: 4px;
+    z-index: -999;
+}
+
+.contatti-form .hidden {
+    flex: 1 65%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ebebeb;
+}
+
+.contatti-form .hidden > * {
+    flex: 1 100%;
+    margin: auto;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 10px 30px 0 80px;
+    width: 75%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #333;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #333;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+        color: transparent;
+    }
+
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #f66,#FF9F9F);
+    border-image-slice: 1;
+    }
+
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #f66;
+    font-weight:700;    
+}
+    /* reset input */
+.form__field:required,
+.form__field:invalid{
+    box-shadow:none;
+}
+
+.form__group input[type="button"] {
+    padding: 3px 15px 3px 15px;
+    font-size: 1.3rem;
+    color: #333;
+    background: #f66;
+    border: none;
+    box-shadow: #333 2px 2px;
 }
